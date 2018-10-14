@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifesto>
+    <meta>
+        <id>3</id>
+        <titulo>Trabalho de Casa nº4</titulo>
+        <subtitulo>TPC4</subtitulo>
+        <supervisor>
+            <nome>José Carlos Ramalho</nome>
+            <email>jcr@di.uminho.pt</email>
+            <website>http://www.di.uminho.pt/~jcr</website>
+        </supervisor>
+        <dinicio>9 de Outubro</dinicio>
+        <dfim>14 de Outubro</dfim>
+    </meta>
+    <equipe>
+        <elemento>
+            <nome>Bruno Carvalho</nome>
+            <id>A76987</id>
+            <email>bmfd.carvalho@gmail.com</email>
+            <website>None</website>
+            <foto path="fotoPS.jpg"/>
+        </elemento>
+    </equipe>
+    <resumo>
+        <para>Neste trabalho, foi nos pedido para que fosse possível pedir ao servidor para abrir uma obra através da seleção da mesma no index, neste caso teria de ser o servidor a abrir a obra.</para>
+        <para>Na secção dos resultados estará o link para o meu repositório git</para>
+    </resumo>
+    <resultados>
+        <resultado path="https://github.com/BrunoCarvalho017/PRI2018">Repositório Git</resultado>
+        <resultado path="manifestoX.xml">XML do Manifesto</resultado>
+    </resultados>
+</manifesto>

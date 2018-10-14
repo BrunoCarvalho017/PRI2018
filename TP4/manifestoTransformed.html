@@ -1,0 +1,91 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+      <meta charset="UTF-8">
+      <title>Manifesto</title>
+   </head>
+   <body><span class="w3-container w3-center">
+         <h1>Manifesto</h1></span>
+      <button onclick="myFunction('OpenMeta')" class="w3-button w3-block w3-center w3-teal"><span style="font-size: 1.5em; color=Black;"><i class="fas fa-info"></i></span> Informação
+         </button><span id="OpenMeta" class="w3-container w3-hide">
+         
+         <p>
+            ID: 3
+         </p>
+         
+         <p>
+            Título: Trabalho de Casa nº4
+         </p>
+         
+         <p>
+            Subtítulo: TPC4
+         </p>
+         
+         <p>
+            Supervisor:
+            <a href="http://www.di.uminho.pt/~jcr">José Carlos Ramalho</a><br><a href="mailto:jcr@di.uminho.pt">
+               Enviar correio
+               </a></p>
+         
+         <p>
+            Data de ínicio: 2 de Outubro
+         </p>
+         
+         <p>
+            Data de fim: 6 de Outubro
+         </p>
+         </span><script>
+            function myFunction(id) {
+                var x = document.getElementById(id);
+                if (x.className.indexOf("w3-show") == -1) {
+                     x.className += " w3-show";
+                }else{ 
+                    x.className = x.className.replace(" w3-show", "");
+                }
+            }
+        </script><br>
+      <button onclick="myFunction('OpenEq')" class="w3-button w3-block w3-center w3-teal"><span style="font-size: 1.5em; color=Black;"><i class="fas fa-user-friends"></i></span> Equipe
+         </button><span id="OpenEq" class="w3-container w3-hide">
+         
+         
+         <p>
+            Nome: Bruno Carvalho
+         </p>
+         
+         <p>
+            ID: A76987
+         </p>
+         
+         <p>
+            Email: <a href="mailto:bmfd.carvalho@gmail.com">bmfd.carvalho@gmail.com</a></p>
+         
+         <p>
+            Website: <a href=""> None </a></p>
+         
+         <p><img src="fotoPS.jpg" heigth="42" width="42"></p>
+         
+         </span><br>
+      <button onclick="myFunction('OpenResu')" class="w3-button w3-block w3-center w3-teal"><span style="font-size: 1.5em; color=Black;"><i class="fas fa-font"></i></span> Resumo
+         </button><span id="OpenResu" class="w3-container w3-hide">
+         
+         <p>Neste trabalho, foi nos pedido para que fosse possível pedir ao servidor para abrir
+            uma obra através da seleção da mesma no index, neste caso teria de ser o servidor
+            a abrir a obra.
+         </p>
+         
+         <p>Na secção dos resultados estará o link para o meu repositório git</p>
+         </span><br>
+      <button onclick="myFunction('OpenRes')" class="w3-button w3-block w3-center w3-teal"><span style="font-size: 1.5em; color=Black;"><i class="far fa-file"></i></span> Resultados
+         </button><span id="OpenRes" class="w3-container w3-hide">
+         <ul class="w3-ul w3-large">
+            
+            <li><a href="https://github.com/BrunoCarvalho017/PRI2018">Repositório Git</a></li>
+            
+            <li><a href="manifestoX.xml">XML do Manifesto</a></li>
+            
+         </ul></span>
+      
+   </body>
+</html>
