@@ -1,0 +1,16 @@
+{
+  "name": "t5",
+  "version": "1.0.0",
+  "description": "Serve o dataset de obras que esta em JSON",
+  "main": "server.js",
+  "dependencies": {
+    "pug": "^2.0.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node server.js",
+    "start": "node server.js"
+  },
+  "author": "Bruno Carvalho",
+  "license": "ISC"
+}

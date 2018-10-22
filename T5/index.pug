@@ -1,0 +1,19 @@
+extends layout
+
+block corpo
+    .w3-container  <!--mesma coisa que div class="w3-container"-->
+        .w3-card-4
+            header.w3-container.w3-light-grey 
+                h3 Obras Musicais
+            .w3-container
+                table.w3-table-bordered
+                    tr
+                        th Lista de Obras
+                    each t in ind
+                        tr
+                            td
+                                ul
+                                        li
+                                            a(href="http://localhost:5000/arqobr/" + t.id)= t.titulo
+            footer.w3-container.w3-light-grey
+                addres Gerado por ArqObrasApp 

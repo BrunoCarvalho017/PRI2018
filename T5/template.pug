@@ -1,0 +1,31 @@
+extends layout
+
+block corpo
+    .w3-container  <!--mesma coisa que div class="w3-container"-->
+        .w3-card-4
+            header.w3-container.w3-light-grey 
+                h1= obr.titulo
+            .w3-container
+                table.w3-table.w3-all
+                    tr
+                        th Titulo
+                        td= obr.titulo
+                    tr
+                        th Tipo
+                        td= obr.tipo
+                    tr
+                        th Compositor
+                        td= obr.compositor
+                    tr
+                        th Instrumentos
+                        each i in obr.instrumentos
+                            tr  
+                                td= i.nome
+                    
+                    
+                
+            footer.w3-container.w3-light-grey
+                p
+                    a(href="http://localhost:5000/index")
+                        | Voltar à página principal
+                addres Gerado por ArqObrasApp
