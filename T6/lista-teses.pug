@@ -1,0 +1,34 @@
+extends layout
+block content
+    .w3-container
+        .w3-card-4.w3-theme-l5
+            header.w3-container.w3-blue-gray
+                h3 Lista de Teses
+            br
+            .w3-container
+                table.w3-table-all
+                    tr
+                        th Nome
+                        th Número
+                        th Curso
+                        th Instituição
+                        th Título
+                        th Data
+                        th Tipo
+                    each te in lista
+                        tr
+                            td= te.nome
+                            td= te.numero
+                            td= te.curso
+                            td= te.instituicao
+                            td= te.titulo
+                            td= te.data
+                            td= te.tipo
+            br 
+            footer.w3-container.w3-blue-gray
+                table(width="100%")
+                    tr
+                        td 
+                            adress Gerado por formTesesApp
+                        td(align="right")
+                            a(href="/")= "Voltar à página inicial"

@@ -1,0 +1,48 @@
+extends layout
+block content 
+    .w3-container
+        .w3-card-4
+            header.w3-container.w3-blue-grey
+                h3.w3-center Registar Tese
+            .w3-container
+                form.w3-container(action='/processaForm', method='POST')
+                    h4 
+                        u Informações acerca do Aluno
+                    label.w3-text
+                        b Nome
+                    input.w3-input.w3-border.w3-round-large(type='text', name='nome')
+                    label.w3-text
+                        b Número / Identificador
+                    input.w3-input.w3-border.w3-round-large(type='text',name='numero')
+                    label.w3-text
+                        b Curso
+                    input.w3-input.w3-border.w3-round-large(type='text',name='curso')
+                    label.w3-text
+                        b Instituição
+                    input.w3-input.w3-border.w3-round-large(type='text',name='instituicao')
+                    br
+                    h4
+                        u Informações acerca da Tese
+                    label.w3-text
+                        b Título
+                    input.w3-input.w3-border.w3-round-large(type='text',name='titulo')
+                    label.w3-text
+                        b Data
+                    input.w3-input.w3-border.w3-round-large(type='date',name='data')
+                    p 
+                        b Tipo
+                    select.w3-select(name="tipo")
+                        option(value="" disabled selected) Escolha a opção
+                        option(value="Mestrado") Mestrado
+                        option(value="Doutoramento") Doutoramento
+                    br
+                    br
+                    input.w3-btn.w3-blue-grey(type='submit' value='Enviar')             
+            br
+            footer.w3-container.w3-blue-grey
+                table(width="100%")
+                    tr
+                        td 
+                            adress Gerado por formTesesApp
+                        td(align="right")
+                            a(href="/")= "Voltar à página inicial"
